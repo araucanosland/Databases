@@ -1,0 +1,44 @@
+{
+  "connections": [
+	{
+      "database": "BD_HERRAMIENTAS",
+      "name": "mdn_interm",
+      "password": "sabor_01",
+      "port": "1433",
+      "server": "localhost\\SQLSERV_BIZAGI",
+      "user": "sa"
+    },
+    {
+      "database": "BD_ARAUCANA",
+      "name": "mdn_interm_pull",
+      "password": "sabor_01",
+      "port": "1433",
+      "server": "localhost\\SQLSERV_BIZAGI",
+      "user": "sa"
+    },
+    {
+      "database": "BD_REPORTES",
+      "name": "mdn_reportes_interm",
+      "password": "sabor_01",
+      "port": "1433",
+      "server": "localhost\\SQLSERV_BIZAGI",
+      "user": "sa"
+    },
+    {
+      "database": "BD_HERRAMIENTAS",
+      "name": "mdn_dev",
+      "password": "admin",
+      "port": "1433",
+      "server": "(LocalDb)\\MSSQLLocalDB",
+      "user": "secreto"
+    },
+    {
+      "database": "BD_HERRAMIENTAS",
+      "name": "PRODUCTION",
+      "password": "usr_motor",
+      "port": 1433,
+      "server": "serv-280",
+      "user": "usr_motor"
+    }
+  ]
+}

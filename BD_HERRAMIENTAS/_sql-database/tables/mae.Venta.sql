@@ -1,0 +1,26 @@
+IF NOT EXISTS (SELECT 1 FROM sys.objects WHERE object_id = OBJECT_ID('[mae].[Venta]') AND type = 'U')
+CREATE TABLE [mae].[Venta]
+(
+    [MesVenta] varchar(6) COLLATE Modern_Spanish_CI_AS NULL,
+    [FechaEjec] varchar(8) COLLATE Modern_Spanish_CI_AS NULL,
+    [RutAfiliado] varchar(20) COLLATE Modern_Spanish_CI_AS NULL,
+    [FolioCredito] varchar(20) COLLATE Modern_Spanish_CI_AS NULL,
+    [Producto] varchar(50) COLLATE Modern_Spanish_CI_AS NULL,
+    [FechaColocacion] varchar(8) COLLATE Modern_Spanish_CI_AS NULL,
+    [Plazo] int NULL,
+    [TasaInteres] float NULL,
+    [MontoBruto] bigint NULL,
+    [MontoNetoReal] bigint NULL,
+    [RutEmpleadoCotizacion] varchar(20) COLLATE Modern_Spanish_CI_AS NULL,
+    [CodOficinaCurse] int NULL,
+    [OficinaCurse] nvarchar(255) COLLATE Modern_Spanish_CI_AS NOT NULL,
+    [CodOficinaCurseMadre] float NULL,
+    [OficinaCurseMadre] nvarchar(255) COLLATE Modern_Spanish_CI_AS NULL,
+    [CodOficinaPago] int NULL,
+    [OficinaPago] nvarchar(255) COLLATE Modern_Spanish_CI_AS NOT NULL,
+    [CodOficinaPagoMadre] float NULL,
+    [OficinaPagoMadre] nvarchar(255) COLLATE Modern_Spanish_CI_AS NULL,
+    [OfertaNum] varchar(20) COLLATE Modern_Spanish_CI_AS NULL,
+    [ProgRecon_idGrupo] varchar(2) COLLATE Modern_Spanish_CI_AS NULL,
+    [ProgRecon_Grupo] varchar(25) COLLATE Modern_Spanish_CI_AS NULL,
+)
